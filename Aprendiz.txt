@@ -1,0 +1,40 @@
+public class Aprendiz extends Mago {
+  private String Pet;
+  int Life;
+  String Nome;
+  int Mana;
+
+  public String getPet() {
+    Pet = "Lobo";
+    return Pet;
+  }
+
+  @Override
+  public String getNome() {
+    return "Calixto";
+  }
+
+  @Override
+  public int getLife() {
+    return super.getLife();
+  }
+
+  @Override
+  public int getMana() {
+    return super.getMana();
+  }
+
+  @Override
+  public String getArma() {
+    return "Gorro";
+  }
+
+  @Override
+  public String toString() {
+    System.out.println("Aprendiz");
+    return super.toString() + "\nPET: " + getPet();
+  }
+
+}
+
+

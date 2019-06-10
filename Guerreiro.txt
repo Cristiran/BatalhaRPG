@@ -1,0 +1,37 @@
+import java.util.Random;
+
+public class Guerreiro extends Personagem {
+  int Força;
+  int Agilidade;
+  int Life = 500;
+
+  @Override
+  public int getLife() {
+    return this.Life;
+  }
+
+  @Override
+  public void TakeDamage(int random) {
+    this.Life = this.Life - new Random().nextInt(99);
+  }
+
+  @Override
+  public String getNome() {
+    return "";
+  }
+
+  public int getForça() {
+    return Força;
+  }
+
+  public int getAgilidade() {
+    return Agilidade;
+  }
+
+  @Override
+  public String toString() {
+    return "nome: " + getNome() + "\nLife: " + getLife() + "\nForça: " + getForça() + "\nAgilidade: " + getAgilidade();
+
+  }
+
+}

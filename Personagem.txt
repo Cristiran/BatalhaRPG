@@ -1,0 +1,6 @@
+public abstract class Personagem {
+  
+  public abstract int getLife();
+  public abstract void TakeDamage(int r);
+  public abstract String getNome();
+}

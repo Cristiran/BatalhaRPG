@@ -1,0 +1,77 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+
+  public static void main(String[] args) {
+    System.out.println("\n             APRESENTAÇÃO              \n");
+    
+    System.out.println("\n**************** MAGOS ****************\n");
+    Aprendiz aprendiz = new Aprendiz();
+    System.out.println(aprendiz);
+    System.out.println("\n----------------------------------------\n");
+    Feiticeiro feiticeiro = new Feiticeiro();
+    System.out.println(feiticeiro);
+
+    System.out.println("\n************** GUERREIROS **************\n");
+    Soldado soldado = new Soldado();
+    System.out.println(soldado);
+    System.out.println("\n----------------------------------------\n");
+    Arqueiro arqueiro = new Arqueiro();
+    System.out.println(arqueiro);
+    
+    System.out.println("\n**************** BATALHA ****************\n");
+
+    int i;
+
+    System.out.print("Escolha uma subcategoria:\n1. Aprendiz\n2. Feiticeiro\n3. Soldado\n4. Arqueiro\n\n");
+
+    Scanner input = new Scanner(System.in);
+    i = input.nextInt();
+    Batalha batalha = new Batalha();
+    Personagem p1 = null;
+
+    if (i == 1) {
+      System.out.print("Aprendiz ");
+      p1 = new Aprendiz();
+    }
+    if (i == 2) {
+      System.out.print("Feiticeiro ");
+      p1 = new Feiticeiro();
+    }
+    if (i == 3) {
+      System.out.print("Soldado ");
+      p1 = new Soldado();
+    }
+    if (i == 4) {
+      System.out.print("Arqueiro ");
+      p1 = new Arqueiro();
+    }
+
+    System.out.print(" vs ");
+
+    Personagem p2 = null;
+    Random player2 = new Random();
+    i = player2.nextInt(3);
+    if (i == 0) {
+      System.out.println(" Aprendiz");
+      p2 = new Aprendiz();
+    }
+    if (i == 1) {
+      System.out.println(" Feiticeiro");
+      p2 = new Feiticeiro();
+    }
+    if (i == 2) {
+      System.out.println(" Soldado");
+      p2 = new Soldado();
+    }
+    if (i == 3) {
+      System.out.println(" Arqueiro");
+      p2 = new Arqueiro();
+    }
+    batalha.disputa(p1, p2);
+  }
+}
+
+
+

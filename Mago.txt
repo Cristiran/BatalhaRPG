@@ -1,0 +1,41 @@
+import java.util.Random;
+
+public class Mago extends Personagem {
+  int Mana = 150;
+  int Life = 500;
+  String Nome;
+  String Arma;
+
+  public int getMana() {
+    return Mana;
+  }
+
+  @Override
+  public int getLife() {
+    return Life;
+
+  }
+
+  @Override
+  public void TakeDamage(int random) {
+    this.Life = this.Life - new Random().nextInt(99);
+
+  }
+
+  @Override
+  public String getNome() {
+    return "";
+  }
+
+  public String getArma() {
+    return Arma;
+  }
+
+  @Override
+  public String toString() {
+    return "nome: " + getNome() + "\nLife: " + getLife() + "\nMana: " + getMana() + "\nArma: " + getArma();
+  }
+
+}
+
+

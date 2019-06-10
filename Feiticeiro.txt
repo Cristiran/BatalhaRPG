@@ -1,0 +1,36 @@
+public class Feiticeiro extends Mago {
+  private String Pocoes;
+
+  public String getPocoes() {
+    Pocoes = "Feitiço Shaman";
+    return Pocoes;
+  }
+
+  @Override
+  public String getNome() {
+    return "Felix Fausto"; 
+  }
+
+  @Override
+  public int getLife() {
+    return super.getLife(); 
+  }
+
+  @Override
+  public int getMana() {
+    return super.getMana();
+  }
+
+  public String getArma() {
+    return "Jóia Negra";
+  }
+
+  @Override
+  public String toString() {
+    System.out.println("Feiticeiro");
+    return super.toString() + "\nPoções: " + getPocoes(); 
+  }
+
+}
+
+

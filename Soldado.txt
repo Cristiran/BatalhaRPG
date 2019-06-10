@@ -1,0 +1,36 @@
+public class Soldado extends Guerreiro {
+  String Armadura;
+
+  public String getArmadura() {
+    Armadura = "Túnica dos deuses";
+    return Armadura;
+  }
+
+  @Override
+  public int getAgilidade() {
+    return Agilidade = 85;
+  }
+
+  @Override
+  public int getForça() {
+    return Força = 100;
+  }
+
+  @Override
+  public String getNome() {
+    return "Agamenon";
+  }
+
+  @Override
+  public int getLife() {
+    return super.getLife();
+  }
+
+  @Override
+  public String toString() {
+    System.out.println("Soldado");
+    return super.toString() + "\nArmadura: " + getArmadura();    
+  }
+
+}
+

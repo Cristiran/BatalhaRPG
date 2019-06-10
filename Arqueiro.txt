@@ -1,0 +1,29 @@
+public class Arqueiro extends Guerreiro {
+    String Ataque;
+
+    public String getAtaque() {
+        return "Multiflechas";
+    }
+
+    @Override
+    public String getNome() {
+        return "Legolas";
+    }
+
+    @Override
+    public int getAgilidade() {
+        return Agilidade = 100;
+    }
+
+    @Override
+    public int getForça() {
+        return Força = 65; 
+    }
+    
+    @Override
+    public String toString() {
+         System.out.println("Arqueiro");
+        return super.toString() + "\nAtaque: " + getAtaque();
+    }
+}
+
